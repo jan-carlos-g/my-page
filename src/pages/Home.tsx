@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, useNavigate, Navigate } from 'react-router-dom';
 import { Routes, Route as RouteV6 } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   drawer: {
     width: '100px',
     flexShrink: 0,
-    height: '100vh', 
+    height: '100vh',
   },
   content: {
     flexGrow: 1,
@@ -70,16 +70,16 @@ const useStyles = makeStyles((theme) => ({
   },
   nav: {
     backgroundColor: '#2596be',
-    position: 'fixed', 
+    position: 'fixed',
     top: '0',
   },
 }));
 
 function Home() {
-  useEffect(() => {
-    document.title = "Carlos"; // Altere o título da aba aqui
-  }, []);
   const classes = useStyles();
+
+  useEffect(() => {
+  });
 
   return (
     <Router>
@@ -121,7 +121,7 @@ function Home() {
               className={classes.listItem}
             >
               <ListItemIcon>
-              <WorkIcon />
+                <WorkIcon />
               </ListItemIcon>
               <ListItemText />
             </ListItem>
@@ -132,6 +132,7 @@ function Home() {
             <RouteV6 path="/welcome" element={<Welcome />} />
             <RouteV6 path="/experience" element={<Experience />} />
             <RouteV6 path="/contact" element={<Contact />} />
+            <RouteV6 path="/*" element={<Navigate to="/welcome" replace={true} />} />
           </Routes>
         </div>
       </div>

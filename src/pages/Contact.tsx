@@ -19,8 +19,8 @@ function Contact() {
                   <Typography variant="h6" gutterBottom className="title">
                     Sistema NUPI
                   </Typography>
-                  <Typography variant="body2" className="subtitle" style={{marginTop:'-10px'}}>
-                    Sistema de gestão de informações e atendimento do Núcleo de Políticas inclusivas da UFRB, em que utilizo NodeJs, ReactJs, Sequelize, MySQL e Redux.
+                  <Typography variant="body2" className="subtitle">
+                    Sistema de gestão de informações e atendimento do Núcleo de Políticas inclusivas da UFRB
                   </Typography>
                 </CardContent>
               </Card>
@@ -29,11 +29,11 @@ function Contact() {
         </Container>
       </section>
       <Container className="container">
-        <Typography variant="h4" align="center" gutterBottom className="subtitleForm">
+        <form className="formContainer" >
+        <Typography variant="h4" align="center" style={{color:"seashell"}} gutterBottom className="subtitle">
           Me mande uma mensagem :)
         </Typography>
-        <form>
-          <Box display="flex" flexDirection="column" className="formContainer">
+          <Box display="flex" flexDirection="column" style={{width:'50%'}}>
             <TextField
               label="Nome"
               variant="outlined"
@@ -56,7 +56,7 @@ function Contact() {
               margin="normal"
               required
               multiline
-              rows={4}
+              rows={6}
               fullWidth
               className="input"
             />

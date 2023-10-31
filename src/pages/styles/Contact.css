@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
   
   .projects {
@@ -62,6 +63,13 @@
     margin-bottom: 20px;
   }
   
+  .formContainer {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .input {
     margin-bottom: 20px;
