@@ -8,13 +8,7 @@ import MemoryRoundedIcon from '@material-ui/icons/MemoryRounded';
 import WorkOutlineTwoToneIcon from '@material-ui/icons/WorkOutlineTwoTone';
 import Paper from '@material-ui/core/Paper';
 import ReactNativeIcon from '@material-ui/icons/PhoneIphone';
-import NodeJsIcon from '@material-ui/icons/DeviceHub';
-import GitIcon from '@material-ui/icons/DeviceHub';
-import VSCodeIcon from '@material-ui/icons/Code';
-import GitLabIcon from '@material-ui/icons/DeviceHub';
-import GitHubIcon from '@material-ui/icons/DeviceHub';
-import ReduxIcon from '@material-ui/icons/LibraryBooks';
-import SequelizeIcon from '@material-ui/icons/LibraryBooks';
+
 
 const useStyles = makeStyles((theme) => ({
   cardContainer: {
@@ -44,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 const Experience = () => {
   const classes = useStyles();
   return (
-    <div className="about-me">
+    <div className="experience">
 
       <p className='content' style={{ backgroundColor: '#333333', fontFamily: 'Candara' }}>
         <h1 style={{ color: '#fff' }}>
@@ -68,7 +62,7 @@ const Experience = () => {
                 <Typography variant="h6" component="h1">
                   IF
                 </Typography>
-                <Typography>Ensino médio técnico em informática, primeiro contato com diversas linguagens de programação</Typography>
+                <Typography> <p className='textExp'>Ensino médio técnico em informática, primeiro contato com diversas linguagens de programação</p></Typography>
               </Paper>
             </TimelineContent>
           </TimelineItem>
@@ -101,7 +95,7 @@ const Experience = () => {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" variant="outlined">
-                <WorkOutlineTwoToneIcon />
+                <WorkOutlineTwoToneIcon color='secondary'/>
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
@@ -212,7 +206,7 @@ const Experience = () => {
               <span className="icon"> <ReactNativeIcon/></span> React Native
             </li>
             <li>
-              <span className="icon"><img style={{ height: '25px', width: '25px' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /><NodeJsIcon /></span> Node.js
+              <span className="icon"><img style={{ height: '25px', width: '25px' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /></span> Node.js
             </li>
           </ul>
         </div>

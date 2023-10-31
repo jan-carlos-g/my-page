@@ -17,19 +17,19 @@ import './styles/Welcome.css'
 
 const socialMediaLinks = [
     {
-        icon: <InstagramIcon color='inherit' />,
+        icon: <InstagramIcon  className='iconColor' />,
         link: 'https://www.instagram.com/jancarlos199/',
     },
     {
-        icon: <GitHubIcon color='inherit' />,
+        icon: <GitHubIcon  className='iconColor' />,
         link: 'https://github.com/jan-carlos-g',
     },
     {
-        icon: <LinkedInIcon color='inherit'/>,
+        icon: <LinkedInIcon  className='iconColor'/>,
         link: 'https://www.linkedin.com/in/jan-carlos-9a9514202/',
     },
     {
-        icon: <FacebookIcon color='inherit' />,
+        icon: <FacebookIcon className='iconColor' />,
         link: 'https://www.facebook.com/jan.carlos.948',
     },
 ];
@@ -97,7 +97,8 @@ const useStyles = makeStyles((theme) => ({
     },
     listItemLinkHover: {
         boxShadow: '0px 3px 12px rgba(0, 0, 0, 0.16)',
-    },
+        color: 'yellow',
+    }
 }));
 
 

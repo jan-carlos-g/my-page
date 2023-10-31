@@ -20,7 +20,7 @@ function Contact() {
                     Sistema NUPI
                   </Typography>
                   <Typography variant="body2" className="subtitle">
-                    Sistema de gestão de informações e atendimento do Núcleo de Políticas inclusivas da UFRB
+                    Sistema de gestão de informações e atendimento do Núcleo de Políticas inclusivas da UFRB, em que utilizo ReactJS, NodeJS, Sequelize, Typescript, MySql e Redux.
                   </Typography>
                 </CardContent>
               </Card>

@@ -79,6 +79,7 @@ function Home() {
   const classes = useStyles();
 
   useEffect(() => {
+    document.title = "My page";
   });
 
   return (
