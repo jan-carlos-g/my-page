@@ -11,7 +11,7 @@
     background: #d0d0d0;
     border-radius: 10px 10px 10px 10px;
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 90px auto;
     padding: 20px;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
 .cards {
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 0px auto;
     max-width: 1000px;
 }
 

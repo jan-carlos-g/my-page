@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Routes, Route as RouteV6 } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
@@ -76,6 +76,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Home() {
+  useEffect(() => {
+    document.title = "Carlos"; // Altere o título da aba aqui
+  }, []);
   const classes = useStyles();
 
   return (
