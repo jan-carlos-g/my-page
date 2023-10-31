@@ -1,5 +1,6 @@
 import foto from './assets/jan.jpg';
 import foto2 from './assets/jan2.jpg';
+import backgorund from './assets/background.jpg';
 import content2 from './assets/content2.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
@@ -16,19 +17,19 @@ import './styles/Welcome.css'
 
 const socialMediaLinks = [
     {
-        icon: <InstagramIcon color='primary' />,
+        icon: <InstagramIcon color='inherit' />,
         link: 'https://www.instagram.com/jancarlos199/',
     },
     {
-        icon: <GitHubIcon color='primary' />,
+        icon: <GitHubIcon color='inherit' />,
         link: 'https://github.com/jan-carlos-g',
     },
     {
-        icon: <LinkedInIcon color='primary' />,
+        icon: <LinkedInIcon color='inherit'/>,
         link: 'https://www.linkedin.com/in/jan-carlos-9a9514202/',
     },
     {
-        icon: <FacebookIcon color='primary' />,
+        icon: <FacebookIcon color='inherit' />,
         link: 'https://www.facebook.com/jan.carlos.948',
     },
 ];
@@ -104,9 +105,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Welcome = () => {
     const classes = useStyles();
+    const background = `url(${backgorund})`;
     return (
         <div className="welcome">
-            <div className="content">
+            <div className="content" style={{backgroundImage:background}}>
                 <div className="image-container">
                     <img src={foto} alt="Minha Foto" />
                 </div>
