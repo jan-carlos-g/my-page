@@ -1,0 +1,59 @@
+.about-me {
+    margin: 0;
+    left:200px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    border-radius: -100px 80px 0px 0px;
+    background-size: 100% 100%; 
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+.text {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+    color: #141414;
+}
+
+.text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    overflow: hidden;
+    max-height: 300px;
+    margin: 100px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 300px;
+}
+
+.image-container img:hover {
+    visibility: visible;
+}
+
